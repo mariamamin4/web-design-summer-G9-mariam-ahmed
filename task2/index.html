@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+  </head>
+  <body>
+
+    <form autocomplete="off">
+        <h2>Registeration form</h2>
+        <fieldset style="width:40%" >
+            <legend >Personal information</legend>
+
+            <div>
+        <label for="fname">First Name: </label>
+        <input type="text"  name="first name" required pattern="[A-Za-z]+" id="fname"/>
+    </div>
+
+    <div>
+        <label for="lname">Last Name: </label>
+      <input type="text" name="last name" minlength="5" id="lname" />
+    </div>
+
+    <div>
+      <label for="mob">Mobile: </label>
+      <input type="tel" name="mobile number" maxlength="11" id="mob" pattern="01[0125][0-9]{8}" title="Please enter a valid Egyptian mobile number" />
+    </div>
+
+    <div>
+     <label for="dof">Date of birth: </label>
+     <input type="date" id="dof" name="date of birth" required>
+    </div>
+
+    <div>
+     <input type="radio" name="gender" value="male" id="male" required> <label for="male">Male</label>
+     <input type="radio" name="gender" value="female" id="female" required> <label for="female">Female</label>
+    </div>
+
+    
+    <div>
+     <label for="img">Upload Image: </label>
+     <input type="file" name="image" id="img" accept=".png" >
+    </div> 
+
+ </fieldset>
+
+ <fieldset style="width:40%">
+    <legend>Technical information</legend>
+
+    <div>
+    <label for="course">Course: </label>
+    <input type="text" id="course" name="course" list="courses" placeholder="Search for a course">
+        <datalist id="courses">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Bootstrap">
+            <option value="React">
+        </datalist>
+      </div>
+
+    <div>
+        <label>Tracks: </label><br>
+
+        <input type="checkbox" id="frontend" name="tracks" checked>
+        <label for="frontend">Frontend</label><br>
+
+        <input type="checkbox" id="backend" name="tracks">
+        <label for="backend">Backend</label><br>
+
+        <input type="checkbox" id="uiux" name="tracks">
+        <label for="uiux">UI & UX</label><br>
+
+        <input type="checkbox" id="data" name="tracks">
+        <label for="data">Data Analysis</label><br>
+
+        <input type="checkbox" id="ai" name="tracks">
+        <label for="ai">AI & Machine Learning</label><br>
+    </div>
+
+    <div>
+        <label for="range">Range: </label>
+        <input type="range" step="10" id="range" name="range" min="10" max="100"  >
+    </div><br>
+
+    <div>
+        <label for="cmt">Comment: </label><br>
+        <textarea id="cmt" name="User's comment" placeholder="Enter your comments" required rows="5" cols="40"></textarea>
+    </div>
+
+ </fieldset>
+
+    <div>
+        <input type="submit" value="submit">
+        <input type="reset" value=" reset">
+    </div>
+
+    </form>
+  </body>
+</html>
