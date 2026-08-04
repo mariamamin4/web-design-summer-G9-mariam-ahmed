@@ -48,161 +48,167 @@
     text-align: center;
     margin-top: 15%;
   }
-  footer .nav-links {
-    justify-content: center;
+  .footer-grid {
+    position: relative;
+  }
+  .footer-nav {
+    justify-content: flex-start;
+    position: absolute;
+    top: 39px;
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  nav .nav-links {
+    display: none;
+  }
 
-/* ================= Mobile ================= */
+  nav.display-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-icon {
+    display: flex;
+    font-size: 22px;
+  }
 
-@media (max-width:768px){
+  h1 {
+    font-size: 39px;
+    line-height: 1.3;
+    margin-bottom: 4%;
+  }
+  .section-title {
+    font-size: 32px;
+  }
 
-    .container{
-        width:90%;
-    }
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
 
-    /* ---------- Navbar ---------- */
+  section:first-of-type .display-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .nav-links{
-        display:none;
-    }
+  .img-style {
+    width: 100%;
+  }
 
-    .menu-icon{
-        display:block;
-        font-size:22px;
-        cursor:pointer;
-      
-    }
+  section:first-of-type .join-btn {
+    width: 100%;
+  }
 
-    nav{
-        padding:20px;
-      
-    }
+  .display-flex {
+    flex-direction: column;
+    gap: 25px;
+  }
 
+  .w-45,
+  .w-50,
+  .sec3img,
+  .fresh {
+    width: 100%;
+  }
 
-    h1{
-        font-size:39px;
-        line-height:1.3;
-        margin-bottom: 4%;
-    }
+  .imgsec2 {
+    display: none;
+  }
 
-    .section-title{
-        font-size:32px;
-    }
+  .dvgap {
+    gap: 30px;
+  }
+  .hero-images {
+    flex-direction: column;
+  }
 
-    p{
-        font-size:15px;
-        line-height:1.7;
-    }
+  .sec3img img {
+    width: 100%;
+  }
 
-    /* ---------- First Section ---------- */
+  .fresh ul {
+    margin: auto;
 
-    section:first-of-type .display-flex{
-        flex-direction:column;
-        gap:20px;
-    }
+    width: 90%;
+  }
 
-    .img-style{
-        width:100%;
-    }
+  .fresh li {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .join-btn{
-        width:100%;
-    }
+  .bg-img {
+    height: auto;
+    padding: 40px 30px;
+  }
+  .bg-img h2 {
+    width: 50%;
+    margin: auto;
+  }
+  .join-btn {
+    width: 40%;
+  }
+  .bg-img p {
+    display: none;
+  }
 
-    /* ---------- Common ---------- */
+  #text-container {
+    width: 100%;
+  }
 
-    .display-flex{
-        flex-direction:column;
-        gap:25px;
-    }
+  .bg-img2 {
+    position: static;
+    width: 50%;
+    padding: 3px 0;
+    flex-direction: column;
+    gap: 25px;
+    height: auto;
+  }
 
-    .w-45,
-    .w-50,
-    .sec3img,
-    .fresh{
-        width:100%;
-    }
+  .bg-img2 img {
+    width: 200px;
+  }
 
-    /* ---------- Second Section ---------- */
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
 
-    .imgsec2{
-        display:none;
-    }
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .dvgap{
-        gap:30px;
-    }
+  .footer-logo {
+    order: 1;
+    margin: 0 auto;
+  }
 
-    /* ---------- Third Section ---------- */
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 18px 50px;
+    justify-content: flex-start;
+  }
+  .footer-nav li {
+    flex: 0 0 40%;
+  }
 
-    .sec3img img{
-        width:100%;
-    }
-
-    .fresh ul{
-       margin: auto;
-      
-        width: 90%;
-
-    }
-
-    .fresh li{
-      display:flex ;
-      flex-direction: row;
-    }
-
-    /* ---------- Banner ---------- */
-
-    .bg-img{
-        height:auto;
-        padding:40px 30px;
-    }
-    .bg-img h2{
-      width: 50%;
-      margin: auto;
-    }
-    .join-btn{
-       width: 40%;
-    }
-    .bg-img p{
-      display: none;
-    }
-
-    #text-container{
-        width:100%;
-    }
-
-    .bg-img2{
-        position:static;
-        width:50%;
-        padding:3px 0;
-        flex-direction:column;
-        gap:25px;
-        height:auto;
-    }
-
-    .bg-img2 img{
-        width:200px;
-    }
-
-    /* ---------- Footer ---------- */
-
-    footer{
-        margin-top:30px;
-        text-align:center;
-    }
-
-    footer .display-flex{
-        flex-direction:column;
-        gap:25px;
-    }
-
-    footer .nav-links{
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-    }
-
+  .footer-social {
+    order: 3;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
