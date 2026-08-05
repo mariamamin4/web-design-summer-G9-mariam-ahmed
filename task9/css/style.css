@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background:#f8f9fa;
+}
+
+.card img{
+    height:180px;
+    object-fit:cover;
+}
+
+h5{
+    font-size:1.15rem;
+}
+
+small{
+    font-size:.8rem;
+}
+.rounded-circle{
+    width: 60px;
+    height: 60px;
+}
